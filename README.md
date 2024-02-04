@@ -31,3 +31,32 @@ Schema:
 
 **Note:** Returns the same item multiple times, each in its own json dict
 
+---
+
+### Return Receipts
+
+Link: `https://shop.rewe.de/api/receipts`
+
+Example Schema:
+```json
+{
+  "items": [
+    {
+      "receiptId": "601886f4-1cf6-0000-0000-133244fbe16a",
+      "receiptTimestamp": "2024-01-01T20:00:00Z",
+      "receiptTotalPrice": 0000,
+      "paybackFlag": true,
+      "paybackPoints": 000,
+      "paybackNumber": "******0000",
+      "market": {
+        "wwIdent": "00000",
+        "name": "REWE Center",
+        "street": "Musterstr. 555",
+        "zipCode": "0000",
+        "city": "City"
+      },
+      "cancelled": false
+    },
+```
+
+**Note:** Use a `receiptId` to get information about a specific receipt

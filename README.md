@@ -6,8 +6,11 @@ Documenting the REWE APIs one request at a time.
 
 ### Return EAN, ArticleID, ProductID, Name, Description and Categories
 
-Link: `https://mobile-api.rewe.de/products/ean/$GTIN`
+Link: `https://mobile-api.rewe.de/products/ean/$ean`
+
 Schema:
+
+
 ```json
 {
   "items": [
